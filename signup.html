@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="bgChange">
+        <div class="logo">
+            <img src="images/code-solid.svg" alt="" class="logoimg">
+            <h1>CodeTools</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="signup.html" class="currentpg">Sign Up</a></li>
+            <li class="signName"></li>
+        </ul>
+    </nav>
+
+    <div class="signupcontainer">
+        <div class="signUpbox">
+            <h1>Sign Up</h1>
+            <div class="input-container">
+                FullName: <input type="text" id="signUpUserName" autocomplete="off">
+            </div>
+            <div class="input-container">
+                Password: <input type="password" name="" id="signUpPass" autocomplete="off">
+            </div>
+            <div class="showpassword">
+                <input type="checkbox" name="" id="showpass">Show password
+            </div>
+            <button id="submitbtn">Submit</button>
+        </div>
+    </div>
+    <div class="aftercontainer">
+        <h1 id="afterh1"></h1>
+    </div>
+
+</body>
+
+<script src="https://kit.fontawesome.com/65abe33f15.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>

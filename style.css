@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Source+Code+Pro:wght@200&display=swap');
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 20px 30px;
+    transition: 0.2s all ease-in;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;   
+    gap: 40px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+.logo img{
+    width: 60px;
+}
+nav h1{
+    font-size: 3.2rem;
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: bolder;
+}
+nav ul a{
+    font-size: 2rem;
+    color: rgb(250, 245, 245);
+    text-decoration: none;
+}
+.currentpg{
+    color: #8DEBEB;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.signName{
+    background-color: rgb(221, 88, 0);
+    border-radius: 100px;
+    padding: 3px 12px;
+    font-size: 20px;    
+    color: white;
+    display: none;
+}
+/* Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+/* Typewriter Effect */
+.typewriter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.typewriter span{
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace; 
+}
+
+/* To The Top Btn */
+.tothetop{
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    display: none;
+}
+.tothetop button{
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: none;
+    background-color: dodgerblue;
+}
+
+/* Products */
+.productscontainer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.productscontainer h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+}
+.products{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;    
+}
+.productBox{
+    border: 3px solid white;
+    width: 30%;
+}
+.productBox img{
+    width: 100%;
+    height: 500px;
+}
+.productInfo{
+    padding: 10px;
+}
+.productBox h1{
+    font-family: 'Kanit', sans-serif;
+}
+.productInfo p{
+    font-family: 'Source Code Pro', monospace; 
+    font-size: 20px;
+}
+.productButton{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+.productBox button{
+    font-family: 'Kanit', sans-serif;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(119, 187, 255);
+}
+.morebtn{
+    background-color: rgb(119, 187, 255);
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    align-self: flex-end;
+    border: 0;
+    margin: 20px 35px;
+    padding: 0 15px;
+    gap: 5px;
+    border-radius: 20px;
+}
+.morebtn img{
+    width: 25px;
+    height: 40px;
+    margin-top: 3px;
+}
+/* About */
+.about{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+.about h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+.about p{
+    font-family: 'Source Code Pro', monospace; 
+    font-size: 25px;
+}
+.gif-container img{
+    width: 414px;
+    height: 293px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sign Up */
+.signupcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.signUpbox{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+    box-shadow: 10px 20px 15px 0 rgb(46, 46, 46) ;
+}
+.signUpbox h1{
+    font-family: 'Kanit', sans-serif;
+}
+.input-container{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold; 
+}
+#signUpUserName{
+    font-weight: bold; 
+    width: 20vw;
+    font-family: 'Source Code Pro', monospace;
+    padding: 5px;
+    border: 3px solid rgb(44, 160, 255);
+    outline: 0;
+}
+#signUpPass{
+    border: 3px solid rgb(44, 160, 255);
+    outline: 0;
+    padding: 5px;
+    font-weight: bold; 
+    font-family: 'Source Code Pro', monospace;
+    width: 20vw;
+}
+#signUpUserName[type=text]:focus {
+    border: 3px solid rgb(44, 160, 255);
+    outline: 0;
+}
+#signUpPass[type=password]:focus{
+    border: 3px solid rgb(44, 160, 255);
+    outline: 0;
+}
+.showpassword{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+}
+.showpassword input{
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+}
+.signUpbox button{
+    align-self: center;
+    width: 30%;
+    padding: 2px 15px;
+    border-radius: 20px;
+    background-color: rgb(44, 160, 255);
+    border: 3px solid rgb(44, 160, 255);
+    color: white;
+    font-size: 20px;
+}
+.signUpbox button:hover{
+    background-color: transparent;
+    color: rgb(44, 160, 255);
+}
+.aftercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: none;
+}
